@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <link rel="icon" type="image/png" href="/STX/frontend/icons/car.svg">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create Account</title>
+  <link rel="stylesheet" href="../css/signup.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="stx-navbar">
+    <a href="landing.html" class="stx-logo">
+      <img src="/STX/frontend/icons/car.svg" alt="Car logo">
+      <span>STX Auto-école</span>
+    </a>
+
+    <div class="stx-menu-toggle" id="stx-menu-toggle">☰</div>
+
+    <ul class="stx-nav-links" id="stx-nav-links">
+      <li><a href="landing.html"><img src="/STX/frontend/icons/home.svg" alt=""> Accueil</a></li>
+      <li><a href="search.html"><img src="/STX/frontend/icons/search.svg" alt=""> Recherche</a></li>
+      <li><a href="registerschool1.html"><img src="/STX/frontend/icons/register-school.svg" alt=""> inscrire école</a></li>
+      <li><a href="about.html"><img src="/STX/frontend/icons/icons8-info.svg" alt=""> À propos</a></li>
+      <li><a href="contactus.html"><img src="/STX/frontend/icons/contact.svg" alt=""> Contact</a></li>
+    </ul>
+
+    <div class="stx-buttons">
+      <a href="login.html" class="stx-login"><img src="/STX/frontend/icons/login.svg" alt=""> se connecter</a>
+      <a href="signup.html" class="stx-signup"><img src="/STX/frontend/icons/user-plus.svg" alt=""> s'inscrire</a>
+    </div>
+  </header>
+
+  <section class="signup-section">
+    <div class="signup-box">
+      <h2>Create Account</h2>
+      <p>Join us and start your driving journey!</p>
+
+      <form id="signupForm">
+        <input type="text" id="name" placeholder="Full Name" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <input type="password" id="confirmPassword" placeholder="Confirm Password" required />
+        <button type="submit">Sign Up</button>
+      </form>
+
+      <p class="or">OR</p>
+
+      <div class="social-signup">
+        <button class="google">Continue with Google</button>
+        <button class="facebook">Continue with Facebook</button>
+      </div>
+
+      <div class="links">
+        <p>Already have an account? <a href="login.html">Login</a></p>
+      </div>
+    </div>
+  </section>
+
+ 
+  <script src="../js/signup.js"></script>
+</body>
+</html>

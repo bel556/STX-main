@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register 4 </title>
+    <link rel="stylesheet" href="../css/registerschool4.css">
+
+</head>
+
+<body>
+ <header class="stx-navbar">
+        <a href="landing.html" class="stx-logo">
+          <img src="/STX/frontend/icons/car.svg" alt="Car logo">
+          <span>STX Auto-école</span>
+        </a>
+    
+        <div class="stx-menu-toggle" id="stx-menu-toggle">☰</div>
+    
+        <ul class="stx-nav-links" id="stx-nav-links">
+          <li><a href="home-combined.html"><img src="/STX/frontend/icons/home.svg" alt=""> Accueil</a></li>
+          <li><a href="search.html"><img src="/STX/frontend/icons/search.svg" alt=""> Recherche</a></li>
+          <li><a href="registerschool1.html"><img src="/STX/frontend/icons/register-school.svg" alt=""> inscrire école</a></li>
+          <li><a href="about.html"><img src="/STX/frontend/icons/icons8-info.svg" alt=""> À propos</a></li>
+          <li><a href="contactus.html"><img src="/STX/frontend/icons/contact.svg" alt=""> Contact</a></li>
+        </ul>
+    
+        <div class="stx-buttons">
+          <a href="login.html" class="stx-login"><img src="/STX/frontend/icons/login.svg" alt=""> se connecter</a>
+          <a href="signup.html" class="stx-signup"><img src="/STX/frontend/icons/user-plus.svg" alt=""> s'inscrire</a>
+        </div>
+      </header>
+    <div class="container">
+        <div class="page-header">
+            <h1>Inscrire votre auto-école</h1>
+            <p>Rejoignez STX Auto-école et développez votre activité</p>
+        </div>
+        <div class="form-wrapper">
+            <div class="progress-container">
+                <div class="progress-steps">
+                    <div class="step completed">
+                        <div class="step-number">✓</div>
+                        <div class="step-label">Informations</div>
+                    </div>
+                    <div class="step completed">
+                        <div class="step-number">✓</div>
+                        <div class="step-label">Localisation</div>
+                    </div>
+                    <div class="step completed">
+                        <div class="step-number">✓</div>
+                        <div class="step-label">Services</div>
+                    </div>
+                    <div class="step active">
+                        <div class="step-number">4</div>
+                        <div class="step-label">Finalisation</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-container">
+                <h2 class="form-section-title">Conditions et documents</h2>
+
+                <form id="finalisationForm">
+                    <div class="form-group">
+                        <label for="ageMinimum">Âge minimum</label>
+                        <input type="number" id="ageMinimum" name="ageMinimum" value="18" min="16" max="99" required>
+                    </div>
+
+                    <div class="form-section">
+                        <span class="section-label">Documents requis</span>
+                        <div class="checkbox-grid">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="identityCard" name="documents" value="identity" required>
+                                <label for="identityCard">Identity Card</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="passport" name="documents" value="passport">
+                                <label for="passport">Passport</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="birthCertificate" name="documents" value="birth">
+                                <label for="birthCertificate">Birth Certificate</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="proofAddress" name="documents" value="address">
+                                <label for="proofAddress">Proof of Address</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="medicalCert" name="documents" value="medical">
+                                <label for="medicalCert">Medical Certificate</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="eyeTest" name="documents" value="eyetest">
+                                <label for="eyeTest">Eye Test Certificate</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="photos" name="documents" value="photos">
+                                <label for="photos">Photos (passport style)</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="previousLicense" name="documents" value="license">
+                                <label for="previousLicense">Previous License (if applicable)</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hours-section">
+                        <span class="section-label">Horaires d'ouverture</span>
+                        <div class="day-row">
+                            <span class="day-label">Dimanche</span>
+                            <div class="day-checkbox">
+                                <input type="checkbox" id="dimancheClosed" name="dimancheClosed" checked>
+                                <label for="dimancheClosed">Fermé</label>
+                            </div>
+                            <div class="time-inputs">
+                                <input type="text" class="time-input" id="dimancheStart" value="--:--"
+                                    placeholder="--:--" disabled>
+                                <span class="time-separator">à</span>
+                                <input type="text" class="time-input" id="dimancheEnd" value="--:--" placeholder="--:--"
+                                    disabled>
+                            </div>
+                        </div>
+                        <div class="day-row">
+                            <span class="day-label">Lundi</span>
+                            <div class="day-checkbox">
+                                <input type="checkbox" id="lundiClosed" name="lundiClosed">
+                                <label for="lundiClosed">Fermé</label>
+                            </div>
+                            <div class="time-inputs">
+                                <input type="text" class="time-input" id="lundiStart" value="08:00" placeholder="08:00">
+                                <span class="time-separator">à</span>
+                                <input type="text" class="time-input" id="lundiEnd" value="18:00" placeholder="18:00">
+                            </div>
+                        </div>
+
+                        <div class="day-row">
+                            <span class="day-label">Mardi</span>
+                            <div class="day-checkbox">
+                                <input type="checkbox" id="mardiClosed" name="mardiClosed">
+                                <label for="mardiClosed">Fermé</label>
+                            </div>
+                            <div class="time-inputs">
+                                <input type="text" class="time-input" id="mardiStart" value="08:00" placeholder="08:00">
+                                <span class="time-separator">à</span>
+                                <input type="text" class="time-input" id="mardiEnd" value="18:00" placeholder="18:00">
+                            </div>
+                        </div>
+
+                        <div class="day-row">
+                            <span class="day-label">Mercredi</span>
+                            <div class="day-checkbox">
+                                <input type="checkbox" id="mercrediClosed" name="mercrediClosed">
+                                <label for="mercrediClosed">Fermé</label>
+                            </div>
+                            <div class="time-inputs">
+                                <input type="text" class="time-input" id="mercrediStart" value="08:00"
+                                    placeholder="08:00">
+                                <span class="time-separator">à</span>
+                                <input type="text" class="time-input" id="mercrediEnd" value="18:00"
+                                    placeholder="18:00">
+                            </div>
+                        </div>
+
+                        <div class="day-row">
+                            <span class="day-label">Jeudi</span>
+                            <div class="day-checkbox">
+                                <input type="checkbox" id="jeudiClosed" name="jeudiClosed">
+                                <label for="jeudiClosed">Fermé</label>
+                            </div>
+                            <div class="time-inputs">
+                                <input type="text" class="time-input" id="jeudiStart" value="08:00" placeholder="08:00">
+                                <span class="time-separator">à</span>
+                                <input type="text" class="time-input" id="jeudiEnd" value="18:00" placeholder="18:00">
+                            </div>
+                        </div>
+
+                        <div class="day-row">
+                            <span class="day-label">Vendredi</span>
+                            <div class="day-checkbox">
+                                <input type="checkbox" id="vendrediClosed" name="vendrediClosed">
+                                <label for="vendrediClosed">Fermé</label>
+                            </div>
+                            <div class="time-inputs">
+                                <input type="text" class="time-input" id="vendrediStart" value="08:00"
+                                    placeholder="08:00">
+                                <span class="time-separator">à</span>
+                                <input type="text" class="time-input" id="vendrediEnd" value="18:00"
+                                    placeholder="18:00">
+                            </div>
+                        </div>
+
+                        <div class="day-row">
+                            <span class="day-label">Samedi</span>
+                            <div class="day-checkbox">
+                                <input type="checkbox" id="samediClosed" name="samediClosed">
+                                <label for="samediClosed">Fermé</label>
+                            </div>
+                            <div class="time-inputs">
+                                <input type="text" class="time-input" id="samediStart" value="09:00"
+                                    placeholder="09:00">
+                                <span class="time-separator">à</span>
+                                <input type="text" class="time-input" id="samediEnd" value="17:00" placeholder="17:00">
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="button-group">
+                        <button type="button" class="btn btn-secondary" onclick="location.href='registerschool3.html'">
+                            <i class="fas fa-arrow-left"></i>
+                            Précédent
+                        </button>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-check"></i>
+                            Inscrire mon auto-école
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+  <footer class="footer-section">
+    <div class="footer-main">
+      <div class="footer-content-wrapper">
+        <!-- Brand Section -->
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="../icons/car.svg" alt="STX Logo">
+            <span>STX Auto-école</span>
+          </div>
+          <p class="footer-tagline">Votre partenaire de confiance pour trouver l'auto-école parfaite. Apprenez à conduire en toute confiance.</p>
+          
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links-section">
+          <h4 class="footer-heading">Liens rapides</h4>
+          <ul class="footer-list">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="search.html">Rechercher des écoles</a></li>
+            <li><a href="about.html">À propos de nous</a></li>
+            <li><a href="register.html">Enregistrer une école</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-contact-section">
+          <h4 class="footer-heading">Contactez-nous</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <span class="contact-icon">📧</span>
+              <a href="mailto:contact@stx-platform.com">contact@stx-platform.com</a>
+            </li>
+            <li>
+              <span class="contact-icon">📞</span>
+              <a href="tel:+33123456789">+33 1 23 45 67 89</a>
+            </li>
+            <li>
+              <span class="contact-icon">📍</span>
+              <span>Paris, France</span>
+            </li>
+          </ul>
+        </div>
+
+       
+      </div>
+    </div>
+
+  
+  </footer>
+    <script src="../js/registerschool4.js"></script>
+</body>
+
+</html>

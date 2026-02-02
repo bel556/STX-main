@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    
+  <link rel="icon" type="image/png" href="/STX/frontend/icons/car.svg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous</title>
+    <link rel="stylesheet" href="../css/contactus.css">
+</head>
+<body>
+    <header class="stx-navbar">
+        <a href="landing.html" class="stx-logo">
+          <img src="/STX/frontend/icons/car.svg" alt="Car logo">
+          <span>STX Auto-école</span>
+        </a>
+    
+        <div class="stx-menu-toggle" id="stx-menu-toggle">☰</div>
+    
+        <ul class="stx-nav-links" id="stx-nav-links">
+          <li><a href="home-combined.html"><img src="/STX/frontend/icons/home.svg" alt=""> Accueil</a></li>
+          <li><a href="search.html"><img src="/STX/frontend/icons/search.svg" alt=""> Recherche</a></li>
+          <li><a href="registerschool1.html"><img src="/STX/frontend/icons/register-school.svg" alt=""> inscrire école</a></li>
+          <li><a href="about.html"><img src="/STX/frontend/icons/icons8-info.svg" alt=""> À propos</a></li>
+          <li><a href="contactus.html"><img src="/STX/frontend/icons/contact.svg" alt=""> Contact</a></li>
+        </ul>
+    
+        <div class="stx-buttons">
+          <a href="login.html" class="stx-login"><img src="/STX/frontend/icons/login.svg" alt=""> se connecter</a>
+          <a href="signup.html" class="stx-signup"><img src="/STX/frontend/icons/user-plus.svg" alt=""> s'inscrire</a>
+        </div>
+      </header>
+
+    <div class="container">
+        <header class="hero-section">
+            <h1>Contactez-nous</h1>
+            <p>Une question, une suggestion ou besoin d'aide ? Notre équipe est là pour vous accompagner.</p>
+        </header>
+
+        <div class="content-wrapper">
+            <div class="form-section">
+                <h2>Envoyez-nous un message</h2>
+                <form id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Nom complet *</label>
+                            <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" placeholder="votre.email@example.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reason">Vous êtes *</label>
+                        <select id="reason" name="reason" required>
+                            <option value="">Parent</option>
+                            <option value="student">Élève actuel</option>
+                            <option value="parent">Parent</option>
+                            <option value="partner">Partenaire</option>
+                            <option value="other">Autre</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Sujet *</label>
+                        <input type="text" id="subject" name="subject" placeholder="Objet de votre message" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Décrivez votre demande en détail" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <span>✈</span> Envoyer le message
+                    </button>
+                </form>
+            </div>
+
+            <div class="info-section">
+                <h2>Autres moyens de nous contacter</h2>
+
+                <div class="contact-card">
+                    <div class="icon email-icon">✉</div>
+                    <div class="contact-details">
+                        <h3>Email</h3>
+                        <p>stx@gmail.com</p>
+                        <span class="availability">Réponse sous 24h</span>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="icon phone-icon">📞</div>
+                    <div class="contact-details">
+                        <h3></h3>
+                        <p>+213 563471041 </p>
+                        <span class="availability">Dim-Jeu 9h-18h</span>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="icon location-icon">📍</div>
+                    <div class="contact-details">
+                        <h3>Adresse</h3>
+                        <p>Pole universitaire de Sidi Abdellah</p>
+                        <p></p>
+                        <span class="availability">Ouvert jusqu'à 18h</span>
+                    </div>
+                </div>
+
+                <div class="social-section">
+                    <h3>Suivez-nous</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-icon facebook">
+                            <img src="../src\img/share-messenger.png" alt="Facebook">
+                        </a>
+                        <a href="#" class="social-icon twitter">
+                            <img src="../src\img/share-linkedin.png" alt="linkedin">
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="faq-section">
+            <h2>Questions fréquentes</h2>
+            
+            <div class="faq-grid">
+                <div class="faq-card">
+                    <h3>Comment puis-je inscrire mon auto-école ?</h3>
+                    <p>Cliquez sur "Inscrire mon auto-école" dans le menu principal et suivez les étapes d'inscription. C'est gratuit et simple !</p>
+                </div>
+
+                <div class="faq-card">
+                    <h3>Les informations des auto-écoles sont-elles vérifiées ?</h3>
+                    <p>Oui, nous vérifions toutes les informations fournies par nos auto-écoles partenaires pour garantir leur exactitude.</p>
+                </div>
+
+                <div class="faq-card">
+                    <h3>Le service est-il payant pour les élèves ?</h3>
+                    <p>Non, STX Auto-école est entièrement gratuit pour nos futurs conducteurs. Notre mission est de vous aider à trouver la bonne auto-école.</p>
+                </div>
+
+                <div class="faq-card">
+                    <h3>Puis-je réserver directement en ligne ?</h3>
+                    <p>Cette fonctionnalité sera bientôt disponible. Pour le moment, contactez directement l'auto-école de votre choix.</p>
+                </div>
+
+                <div class="faq-card">
+                    <h3>Comment puis-je modifier les informations de mon auto-école?</h3>
+                    <p>Connectez-vous à votre espace partenaire ou contactez-nous directement pour mettre à jour vos informations.</p>
+                </div>
+
+                <div class="faq-card">
+                    <h3>Vous couvrez quelles régions ?</h3>
+                    <p>Nous couvrons actuellement quelques wilayas et prévoyons régulièrement de nouvelles villes et auto-écoles.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+       <!-- Footer -->
+  <footer class="footer-section">
+    <div class="footer-main">
+      <div class="footer-content-wrapper">
+        <!-- Brand Section -->
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="/STX/frontend/icons/car.svg" alt="STX Logo">
+            <span>STX Auto-école</span>
+          </div>
+          <p class="footer-tagline">Votre partenaire de confiance pour trouver l'auto-école parfaite. Apprenez à conduire en toute confiance.</p>
+          
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links-section">
+          <h4 class="footer-heading">Liens rapides</h4>
+          <ul class="footer-list">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="search.html">Rechercher des écoles</a></li>
+            <li><a href="about.html">À propos de nous</a></li>
+            <li><a href="registerschool1.html">Enregistrer une école</a></li>
+          </ul>
+        </div>
+
+        
+        
+        <div class="footer-contact-section">
+            <h4 class="footer-heading">Contactez-nous</h4>
+            <ul class="footer-contact-list">
+              <li>
+                <span class="contact-icon">📧</span>
+                <a href="mailto:mohamed-iskandar.grabsi@ensia.edu.dz">mohamed-iskandar.grabsi@ensia.edu.dz</a>
+              </li>
+              <li>
+                <span class="contact-icon">📞</span>
+                <a href="tel:+213563471041">+213 5 63 47 10 41</a>
+              </li>
+              <li>
+                <span class="contact-icon">📍</span>
+                <span>ALGERIE,Alger</span>
+              </li>
+            </ul>
+          </div>
+  
+
+       
+      </div>
+    </div>
+
+  
+  </footer>
+
+    <script src="contact.js"></script>
+</body>
+</html>

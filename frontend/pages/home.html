@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/home.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <title>Home</title>
+</head>
+<body>
+    <div class="welcome-message">
+       <h1 class="title">Find your ideal driving school <span class="writing">near you</span></h1>
+       <p>Compare driving schools, their prices, and find the one that <br>perfectly matches your needs to get your driver's license.</p>
+    </div>
+    <div class="search-div">
+       <form  class="form" >
+        <input type="text" placeholder="  Rechercher une auto-école, ville, nom ..." class="input">
+        <div class="label"><label  id="city" for="city">Cite</label></div>
+        <select name="city"  id="cities"><option value="all">Toutes les villes</option></select>
+        <div class="label"><label for="lisence-type">Type de permis</label></div>
+        <select name="lisence-type" id="lisence" id="lisences"><option value="all">Tous les permis</option></select>
+        <button id="recherche-button" type="button">Recherche</button>
+     </form>
+    </div>
+    <script src="../js/recherche-button.js"></script>
+</body>
+</html>

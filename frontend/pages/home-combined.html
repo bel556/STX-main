@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="icon" type="image/png" href="/STX/frontend/icons/car.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/home.css">
+  <link rel="stylesheet" href="../css/home1.css">
+  <link rel="stylesheet" href="../css/home2.css">
+  <link rel="stylesheet" href="../css/home3.css">
+  <link rel="stylesheet" href="../css/home4.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/home-combined.css">
+  <link rel="stylesheet" href="../css/search_results.css">
+  <title>Home landing</title>
+</head>
+
+<body>
+  <main>
+    <header class="stx-navbar">
+      <a href="landing.html" class="stx-logo">
+        <img src="/STX/frontend/icons/car.svg" alt="Car logo">
+        <span>STX Auto-école</span>
+      </a>
+
+      <div class="stx-menu-toggle" id="stx-menu-toggle">☰</div>
+
+      <ul class="stx-nav-links" id="stx-nav-links">
+        <li><a href="home-combined.html"><img src="/STX/frontend/icons/home.svg" alt=""> Accueil</a></li>
+        <li><a href="search.html"><img src="/STX/frontend/icons/search.svg" alt=""> Recherche</a></li>
+        <li><a href="registerschool1.html"><img src="/STX/frontend/icons/register-school.svg" alt=""> inscrire école</a>
+        </li>
+        <li><a href="about.html"><img src="/STX/frontend/icons/icons8-info.svg" alt=""> À propos</a></li>
+        <li><a href="contactus.html"><img src="/STX/frontend/icons/contact.svg" alt=""> Contact</a></li>
+      </ul>
+
+      <div class="stx-buttons">
+        <a href="login.html" class="stx-login"><img src="/STX/frontend/icons/login.svg" alt=""> se connecter</a>
+        <a href="signup.html" class="stx-signup"><img src="/STX/frontend/icons/user-plus.svg" alt=""> s'inscrire</a>
+      </div>
+    </header>
+
+    <!-- Content from home.html -->
+    <section class="full-section">
+      <div class="welcome-message">
+        <h1 class="title">Trouvez l'auto-école idéale
+          <span class="writing">près de chez vous</span>
+        </h1>
+        <p>Comparez les auto-écoles, leurs prix, et trouvez celle qui <br>parfaitement à vos besoins pour obtenir votre
+          permis de conduire.</p>
+      </div>
+      <div class="search-div">
+        <form class="form">
+          <input type="text" id="home-search-input" placeholder="  Rechercher une auto-école, ville, nom ..."
+            class="input">
+          <div class="label"><label id="city" for="city">Cite</label></div>
+          <select name="city" id="cities">
+            <option value="all">Toutes les villes</option>
+          </select>
+          <div class="label"><label for="lisence-type">Type de permis</label></div>
+          <select name="lisence-type" id="lisences">
+            <option value="all">Tous les permis</option>
+          </select>
+          <button id="recherche-button" type="button">Recherche</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Content from home1.html -->
+    <section class="full-section">
+      <div class="counters">
+        <div class="counter">
+          <img src="../images/educationlogo.png" alt="">
+          <h1 id="home-count-schools">0</h1>
+          <p>Auto-écoles</p>
+        </div>
+        <div class="counter">
+          <img src="../images/locationlogo2.png" alt="">
+          <h1 id="home-count-cities">0</h1>
+          <p>Villes</p>
+        </div>
+        <div class="counter">
+          <img src="../images/permis.logo.png" alt="">
+          <h1 id="home-count-licenses">0</h1>
+          <p>Types de permis</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content from home2.html -->
+    <section class="full-section">
+      <div class="roc">
+        <h1>Auto-écoles recommandées</h1>
+        <p>Découvrez les auto-écoles les mieux notées par nos<br> utilisateurs</p>
+        <a href="../pages/search.html?showAll=true" target="_self">voir tout les auto-écoles →</a>
+      </div>
+
+      <!-- Featured Schools Container -->
+      <div id="featured-schools-results" class="results-grid" style="width: 80%; margin: 40px auto; padding: 0;">
+        <!-- Schools will be loaded here dynamically -->
+      </div>
+    </section>
+
+    <!-- Content from home3.html -->
+    <section class="full-section">
+      <h1>Pourquoi choisir STX Auto-école ?</h1>
+      <div class="box">
+        <div class="search1">
+          <div class="search-png">
+            <img src="../src/img/search2.png" alt="logo2">
+          </div>
+          <div class="search-title">
+            <h1>Recherche simplifiée</h1>
+          </div>
+          <div class="search-p">
+            <p>Trouvez facilement les auto-écoles près de chez vous avec nos filtres avancés.</p>
+          </div>
+        </div>
+        <div class="search2">
+          <div class="search-png"><img src="../src/img/star.png" alt=""></div>
+          <div class="search-title">
+            <h1>Avis vérifiés</h1>
+          </div>
+          <div class="search-p">
+            <p>Consultez les avis authentiques d'autres élèves pour faire le bon choix.</p>
+          </div>
+        </div>
+        <div class="search3">
+          <div class="search-png"><img src="../src/img/euro.png" alt=""></div>
+          <div class="search-title">
+            <h1>Comparaison des prix</h1>
+          </div>
+          <div class="search-p">
+            <p>Comparez les tarifs et forfaits pour trouver l'offre qui vous convient.</p>
+          </div>
+        </div>
+        <div class="search4">
+          <div class="search-png"><img src="../src/img/calander.png" alt=""></div>
+          <div class="search-title">
+            <h1>Réservation en ligne</h1>
+          </div>
+          <div class="search-p">
+            <p>Bientôt disponible : réservez vos heures de conduite directement en ligne.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content from home4.html -->
+    <section class="full-section">
+      <div class="div1">
+        <div class="div2">
+          <h1>Vous êtes une auto-école ?</h1>
+          <p>Rejoignez STX Auto-école et développez votre activité en touchant plus d'élèves.</p>
+          <a href="../pages/registerschool1.html" target="_self">Inscrire mon auto-école →</a>
+
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer-section">
+      <div class="footer-main">
+        <div class="footer-content-wrapper">
+          <!-- Brand Section -->
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <img src="/STX/frontend/icons/car.svg" alt="STX Logo">
+              <span>STX Auto-école</span>
+            </div>
+            <p class="footer-tagline">Votre partenaire de confiance pour trouver l'auto-école parfaite. Apprenez à
+              conduire en toute confiance.</p>
+
+          </div>
+
+          <!-- Quick Links -->
+          <div class="footer-links-section">
+            <h4 class="footer-heading">Liens rapides</h4>
+            <ul class="footer-list">
+              <li><a href="home-combined.html">Accueil</a></li>
+              <li><a href="search.html">Rechercher des écoles</a></li>
+              <li><a href="about.html">À propos de nous</a></li>
+              <li><a href="registerschool1.html">Enregistrer une école</a></li>
+            </ul>
+          </div>
+
+
+          <div class="footer-contact-section">
+            <h4 class="footer-heading">Contactez-nous</h4>
+            <ul class="footer-contact-list">
+              <li>
+                <span class="contact-icon">📧</span>
+                <a href="mailto:mohamed-iskandar.grabsi@ensia.edu.dz">mohamed-iskandar.grabsi@ensia.edu.dz</a>
+              </li>
+              <li>
+                <span class="contact-icon">📞</span>
+                <a href="tel:+213563471041">+213 5 63 47 10 41</a>
+              </li>
+              <li>
+                <span class="contact-icon">📍</span>
+                <span>ALGERIE,Alger</span>
+              </li>
+            </ul>
+          </div>
+
+
+        </div>
+      </div>
+
+
+    </footer>
+  </main>
+
+  <!-- Details Modal -->
+  <div id="school-modal" class="modal-overlay">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <header class="modal-header">
+        <div class="school-initial" id="modal-initial"></div>
+        <h2 class="school-name" id="modal-name"></h2>
+      </header>
+      <div class="modal-body">
+        <!-- Data will be loaded via JS -->
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/populate_search.js"></script>
+  <script src="../js/home_counters.js"></script>
+  <script src="../js/featured_schools.js"></script>
+  <script src="../js/recherche-button.js"></script>
+</body>
+
+</html>

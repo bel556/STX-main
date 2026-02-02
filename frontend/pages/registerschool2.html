@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/registerschool2.css">
+    <title>Register2 (Prototype)</title>
+</head>
+
+<body>
+ <header class="stx-navbar">
+        <a href="landing.html" class="stx-logo">
+          <img src="/STX/frontend/icons/car.svg" alt="Car logo">
+          <span>STX Auto-école</span>
+        </a>
+    
+        <div class="stx-menu-toggle" id="stx-menu-toggle">☰</div>
+    
+        <ul class="stx-nav-links" id="stx-nav-links">
+          <li><a href="home-combined.html"><img src="/STX/frontend/icons/home.svg" alt=""> Accueil</a></li>
+          <li><a href="search.html"><img src="/STX/frontend/icons/search.svg" alt=""> Recherche</a></li>
+          <li><a href="registerschool1.html"><img src="/STX/frontend/icons/register-school.svg" alt=""> inscrire école</a></li>
+          <li><a href="about.html"><img src="/STX/frontend/icons/icons8-info.svg" alt=""> À propos</a></li>
+          <li><a href="contactus.html"><img src="/STX/frontend/icons/contact.svg" alt=""> Contact</a></li>
+        </ul>
+    
+        <div class="stx-buttons">
+          <a href="login.html" class="stx-login"><img src="/STX/frontend/icons/login.svg" alt=""> se connecter</a>
+          <a href="signup.html" class="stx-signup"><img src="/STX/frontend/icons/user-plus.svg" alt=""> s'inscrire</a>
+        </div>
+      </header>
+    <div class="container">
+        <div class="page-header">
+            <h1>Inscrire votre auto-école</h1>
+            <p>Rejoignez STX Auto-école et développez votre activité</p>
+        </div>
+        <div class="form-wrapper">
+            <div class="progress-container">
+                <div class="progress-steps">
+                    <div class="step completed">
+                        <div class="step-number">✓</div>
+                        <div class="step-label">Informations</div>
+                    </div>
+                    <div class="step active">
+                        <div class="step-number">2</div>
+                        <div class="step-label">Localisation</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-label">Services</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-label">Finalisation</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-container">
+                <h2 class="form-section-title">Adresse et localisation</h2>
+
+                <form id="locationForm">
+                    <div class="form-group">
+                        <label for="address">Adresse <span class="required">*</span></label>
+                        <input type="text" id="address" placeholder="123 Rue de la République" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="city" class="label-with-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                                City
+                            </label>
+                            <select id="city" required>
+                                <option value="">Select a city</option>
+                                <option value="paris">Tizi-ouzou</option>
+                                <option value="lyon">Alger</option>
+                                <option value="marseille">Bejai</option>
+                                <option value="toulouse">Oran</option>
+                                <option value="nice">Khenchela</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="postalCode">Code postal <span class="required">*</span></label>
+                            <input type="text" id="postalCode" placeholder="15000" maxlength="5" minlength="5">
+                        </div>
+                    </div>
+
+                    <div class="social-section">
+                        <h3>Réseaux sociaux</h3>
+
+                        <div class="social-input-group">
+                            <div class="social-icon facebook-icon">
+                                <img src="../images/facebook.png" alt="Facebook">
+                            </div>
+                            <input type="url" id="facebook" placeholder="https://facebook.com/votrepage" required>
+                        </div>
+
+                        <div class="social-input-group">
+                            <div class="social-icon instagram-icon">
+                                <img src="../images/insta.png" alt="Instagram">
+                            </div>
+                            <input type="url" id="instagram" placeholder="https://instagram.com/votrepage" required>
+                        </div>
+
+                        <div class="social-input-group">
+                            <div class="social-icon linkedin-icon">
+                                <img src="../images/linkedin.png" alt="LinkedIn">
+                            </div>
+                            <input type="url" id="linkedin" placeholder="https://linkedin.com/company/votrepage"
+                                required>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="suivant-precedent">
+                        <button type="submit" id="precedent" class="precedent"
+                            onclick="location.href='registerschool1.html'">
+                            <i class="fas fa-arrow-left"></i>
+                            Précédent
+                        </button>
+                        <button type="submit" class="suivant" id="suivant">
+                            Suivant
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+     <!-- Footer -->
+  <footer class="footer-section">
+    <div class="footer-main">
+      <div class="footer-content-wrapper">
+        <!-- Brand Section -->
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="../icons/car.svg" alt="STX Logo">
+            <span>STX Auto-école</span>
+          </div>
+          <p class="footer-tagline">Votre partenaire de confiance pour trouver l'auto-école parfaite. Apprenez à conduire en toute confiance.</p>
+          
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links-section">
+          <h4 class="footer-heading">Liens rapides</h4>
+          <ul class="footer-list">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="search.html">Rechercher des écoles</a></li>
+            <li><a href="about.html">À propos de nous</a></li>
+            <li><a href="register.html">Enregistrer une école</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-contact-section">
+          <h4 class="footer-heading">Contactez-nous</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <span class="contact-icon">📧</span>
+              <a href="mailto:contact@stx-platform.com">contact@stx-platform.com</a>
+            </li>
+            <li>
+              <span class="contact-icon">📞</span>
+              <a href="tel:+33123456789">+33 1 23 45 67 89</a>
+            </li>
+            <li>
+              <span class="contact-icon">📍</span>
+              <span>Paris, France</span>
+            </li>
+          </ul>
+        </div>
+
+       
+      </div>
+    </div>
+
+  
+  </footer>
+    <script src="../js/registerschool2.js"></script>
+</body>
+
+</html>
